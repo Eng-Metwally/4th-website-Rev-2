@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container-flex">
+                <div class="header-content">
+                    <a href="index.html" class="brand">Online Shopping</a>
+                    <ul class="user-name">
+                        <li><a href="" id="user"></a></li>
+                    </ul>
+                    <nav>
+                        <ul id="links">
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="register.html">Register</a></li>
+                        </ul>
+                        <ul id="user_info">
+                            <li>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="badge"></span>
+                            </li>
+                            <li>
+                                <span class="cart-down">Cart</span>
+                                <i class="fa-solid fa-caret-down shopping-cart" id="cart-icon"></i>
+                                <div class="carts_products">
+                                    <div></div>
+                                    <a href="cartsproducts.html">View All Products</a>
+                                </div>
+                            </li>
+                            <li><a href="#" id="logout">Log Out</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        
+        <div class="search-section">
+            <div class="custom-select">
+                <select name="" id="search-items" >
+                    <option value="name">Search by name</option>
+                    <option value="category">Search by category</option>
+                </select>
+            </div>
+            <input type="text" id="search-input" placeholder="Search" oninput="handleSearch()">
+        </div>
+        
+        <hr>
+        <section>
+            <div class="container">
+                <div class="products">
+
+                </div>
+            </div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/user.js"></script>
+
+    </body>
+</html>
